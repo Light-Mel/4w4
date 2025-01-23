@@ -3,4 +3,4 @@
 
 Créer une page d'accueil en utilisant le standard BEM et Sass pour reproduire le contenu de maquett
 Auteur: Mélanie Caillol
-### Github-page: 
+### Github-page: https://light-mel.github.io/4w4/
