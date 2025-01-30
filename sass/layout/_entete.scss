@@ -1,5 +1,6 @@
 .burger {
   display: none;
+  z-index: 3;
   @media screen and (max-width:$point__rupture) {
     display: block;
     position: absolute;
@@ -18,8 +19,12 @@
 
 .entete {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+
+  &__logo{
+    margin: 0;
+  }
 
   &__nav {
     display: flex;

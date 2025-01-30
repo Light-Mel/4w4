@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  flex-wrap: wrap;
 
   @media screen and (max-width:$point__rupture) {
     flex-direction: column;

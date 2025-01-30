@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="normalize.css">
+  <title>4W4 - Voyage</title>
+  <link rel="stylesheet" href="/sass/normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="entete">
       <figure class="entete__logo">
-        <img src="images/logo.png" alt="logo de la compagnie" height="40" width="auto">
+        <img src="http://localhost:81/4w4/wp-content/themes/4w4/images/logo.png" alt="logo de la compagnie" height="40" width="auto">
       </figure>
-      <lable for="chk__burger" class="burger">
+      <label for="chk__burger" class="burger">
         <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu" alt="bouton burger" width="32" height="32">
-      </lable>
+      </label>
       <input type="checkbox" id="chk__burger" class="chk__burger"> </input>
       <div class="entete__nav">
         <nav class="entete__menu">
           <ul class="menu">
-            <li class="menu__li"><a class="menu__a" href="#">SPORT</a></li>
-            <li class="menu__li"><a class="menu__a" href="#">PLEIN NATURE</a></li>            
-            <li class="menu__li"><a class="menu__a" href="#">CROISIÈRE</a></li>
-            <li class="menu__li"><a class="menu__a" href="#">AVENTURE</a></li>
-            <li class="menu__li"><a class="menu__a" href="#">CULTUREL</a></li>
-            <li class="menu__li"><a class="menu__a" href="#">REPOS</a></li>
-            <li class="menu__li"><a class="menu__a" href="#">ZEN</a></li>
-            <li class="menu__li"><a class="menu__a" href="#">ÉCONOMIQUE</a></li>
-            <li class="menu__li"><a class="menu__a" href="#">FAVORITE</a></li>
-            <li class="menu__li"><a class="menu__a" href="#">PAYS</a></li>
+            <li class="menu__li"><a class="menu__a" href="#">Sport</a></li>
+            <li class="menu__li"><a class="menu__a" href="#">Plein nature</a></li>            
+            <li class="menu__li"><a class="menu__a" href="#">Croisière</a></li>
+            <li class="menu__li"><a class="menu__a" href="#">Aventure</a></li>
+            <li class="menu__li"><a class="menu__a" href="#">Culture</a></li>
+            <li class="menu__li"><a class="menu__a" href="#">Repos</a></li>
+            <li class="menu__li"><a class="menu__a" href="#">Zen</a></li>
+            <li class="menu__li"><a class="menu__a" href="#">Économique</a></li>
+            <li class="menu__li"><a class="menu__a" href="#">Favorite</a></li>
+            <li class="menu__li"><a class="menu__a" href="#">Pays</a></li>
           </ul>
         </nav>
         <div class="entete__recherche">
           <form class="recherche">
-            <input type="text" class="recherche__input" onfocus="this.value=''" onblur="this.value='RECHERCHE'"  value="RECHERCHE">
+            <input type="text" class="recherche__input" onfocus="this.value=''" onblur="this.value='Recherche'"  value="Recherche">
             <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search" alt="" height="20" width="20">
           </form>
         </div>
