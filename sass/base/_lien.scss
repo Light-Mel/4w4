@@ -1,0 +1,11 @@
+a {
+  color : black;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(0,0,0,0.1);
+  }
+  &:visited {
+    color: rgba(0,0,0,0.3);
+  }
+}
