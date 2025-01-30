@@ -1,6 +1,4 @@
-/* ****************************
-Le composant .carte
-************************* */
+// composant carte
 
 .carte {
   border: 1px solid #ddd;
@@ -9,6 +7,10 @@ Le composant .carte
 
   &--grande {
     padding: 40px;
+  }
+
+  &--petite {
+    padding: 20px;
   }
 
   &__image img {
