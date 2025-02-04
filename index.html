@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>4W4 - Voyage</title>
-  <link rel="stylesheet" href="/sass/normalize.css">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="entete">
       <figure class="entete__logo">
-        <img src="http://localhost:81/4w4/wp-content/themes/4w4/images/logo.png" alt="logo de la compagnie" height="40" width="auto">
+        <img src="images/logo2.png" alt="Le logo de la compagnie" height="140" width="auto">
+        <!-- <img src="http://localhost:81/4w4/wp-content/themes/4w4/images/logo.png" alt="logo de la compagnie" height="40" width="auto"> -->
       </figure>
       <label for="chk__burger" class="burger">
         <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu" alt="bouton burger" width="32" height="32">
@@ -43,8 +44,8 @@
   </header>
   <section class="hero">
     <div class="hero__contenu global">
-      <h1 class="hero__titre">Voyagez autrement avec IHOP!</h1>
-      <p class="hero__description">Découvrez des destinations uniques et inoubliables avec IHOP. Nous vous offrons des expériences authentiques, des paysages à couper le souffle et des aventures sur mesure. Partez à la découverte du monde avec nous et crées des souvenirs imérissables</p>
+      <h1 class="hero__titre">Voyagez autrement avec Gaudet !</h1>
+      <p class="hero__description">Découvrez des destinations uniques et inoubliables avec Gaudet. Nous vous offrons des expériences authentiques, des paysages à couper le souffle et des aventures sur mesure. Partez à la découverte du monde avec nous et crées des souvenirs impérissables.</p>
       <div class="hero__liens">
         <p class="hero__courriel">info@cmaisonneuve.qc.ca</p>
         <p class="hero__adresse">3800 rue Sherbrooke, Montréal</p>
@@ -60,10 +61,51 @@
     </div> 
   </section>
 
+  <section class="carte">
+    <div class="carte--grande">
+      <div class="entete__recherche">
+        <h4 class="carte__contenu">Nom</h4>
+          <input type="text" class="carte__input" onfocus="this.value=''" value="Nom">
+      </div>
+      <div class="entete__recherche">
+        <h4 class="carte__contenu">Prénom</h4>
+          <input type="text" class="carte__input" onfocus="this.value=''" value="Prénom">
+      </div>
+      <div class="entete__recherche">
+        <h4 class="carte__contenu">Courriel</h4>
+          <input type="text" class="carte__input" onfocus="this.value=''" value="Courriel">
+      </div>
+      <div class="entete__recherche">
+        <h4 class="carte__contenu">Téléphone</h4>
+          <input type="text" class="carte__input" onfocus="this.value=''" value="Téléphone">
+      </div>
+      <button class="carte__bouton">S'inscrire</button>
+    </div>
+  </section> 
+
+
   <section class="galerie">
-    <figure class="galerie__fig">
-      <img src="" alt="">
-    </figure>
+    <div class="galerie__contenu">
+      <h2 class="galerie__titre">Photos partagées par nos utilisateurs</h2>
+      <div class="galerie__images">
+      <img src="images/plageNormale.jpg" alt="La plage lors d'un coucher de soleil">
+      <img src="images/sautPlage.jpg" alt="Un saut mal cadré">
+      <img src="images/plagePhoto.jpg" alt="Une fille qui prend un selfie à la plage">
+      <img src="images/igloo.jpg" alt="Un igloo tropical">
+      <img src="images/chevalCascade.jpg" alt="Cheval magique devant la cascade">
+      <img src="images/stade.webp" alt="Le stade">
+      <img src="images/mousse.jpg" alt="Bataille de mousse???">
+      <img src="images/plage.jpg" alt="Les filles à Jean-machin quand elles découvrent l'eau">
+      <img src="images/petiteVoiture.jpg" alt="Juste une toute petite voiture">
+      <img src="images/mortPlage.jpg" alt="La canicule">
+      <img src="images/jugementDuCameraman.jpg" alt="La photo de trop">
+      <img src="images/gensPlage.jpg" alt="Photo de voyage de Michel">
+      <img src="images/famillePlage1.png" alt="Ginette et sa famille à la plage">
+      <img src="images/corbes1.png" alt="San Antonio de los Corbes">
+      <img src="images/tourEiffel1.png" alt="La vraie tour Eiffel">
+      <img src="images/face.png" alt="Jean-machin devant la pierre visage">
+      </div>
+    </div>
   </section>
   
   <!-- <section class="promotion">

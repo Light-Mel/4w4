@@ -36,7 +36,7 @@ a:visited {
 /* /////////////////// 
 Composants
 /////////////////// */
-.carte {
+/* .carte {
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
@@ -75,7 +75,61 @@ Composants
 }
 .carte__bouton:hover {
   background-color: #0056b3;
+} */
+
+.carte {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.253);
 }
+.carte--grande {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4%;
+  padding: 10px;
+}
+@media screen and (max-width: 700px) {
+  .carte--grande {
+    flex-direction: column;
+  }
+}
+.carte__contenu {
+  margin: 0;
+  margin-bottom: 1vh;
+  padding-top: 1vh;
+}
+.carte__input {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid rgb(0, 255, 242);
+  color: rgb(142, 142, 142);
+}
+.carte__input:hover {
+  border: 2px solid rgb(0, 190, 180);
+}
+.carte__bouton {
+  padding: 10px 20px;
+  margin-top: 1vh;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 255, 242);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.carte__bouton--actif {
+  background-color: white;
+}
+.carte__bouton:hover {
+  background-color: rgb(242, 242, 242);
+}
+
 
 .menu {
   display: flex;
@@ -135,6 +189,7 @@ Layout
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 30px 0;
 }
 .entete__logo {
   margin: 0;
@@ -195,3 +250,23 @@ Layout
 .hero__bouton:hover {
   background-color: rgba(18, 237, 219, 0.881);
 }/*# sourceMappingURL=style.css.map */
+
+.galerie {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+}
+.galerie__images {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 1vw;
+  row-gap: 2vh;
+  border-radius: 8px;
+}
+
+.galerie__images img{
+  width: 20%;
+  
+}
