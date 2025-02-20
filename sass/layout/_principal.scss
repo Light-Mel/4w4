@@ -1,6 +1,6 @@
 .global {
   margin: 0 auto;
-  width: 80vw;
+  max-width: 1000px;
 }
 
 .hero {
@@ -11,6 +11,14 @@
     padding-top: 10vh;
     font-size: 3rem;
     text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
+  }
+
+  &__contenu {
+      max-width: 80%;
+  }
+
+  &__description {
+    width: 40vw;
   }
 
   &__liens p, button {
@@ -25,13 +33,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     height: 40px;
     border: none;
     border-radius: 4px;
+
     background-color: rgba(255, 255, 255, 0.668);
 
-    &:hover{
-      background-color: rgba(18, 237, 219, 0.881);
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.427);
+      cursor: pointer;
     }
+  }
+}
+
+.galerie {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+
+  &__images {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1vw;
+    row-gap: 1vh;
+
+    border-radius: 8px;
   }
 }

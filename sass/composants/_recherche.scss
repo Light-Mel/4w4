@@ -1,19 +1,17 @@
 .recherche {
   display: flex;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(168, 168, 168);
+  height: 1.3rem;
+  padding: 2px;
 
   &__input {
-    height: 1.3rem;
-    padding: 2px;
-    border: none;
     outline: none;
+    border: none;
 
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.05)
-    }
+    color: rgb(142, 142, 142);
   }
 
-  &__img {
-    
+  &:hover {
+    border: 1px solid rgb(0, 0, 0);
   }
 }

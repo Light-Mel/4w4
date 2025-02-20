@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme Name: 4W4 - Mélanie Caillol
+Theme Name: 4W4 - Arik Malenfant-Lacombe
 Theme URI: https://wordpress.org/themes/twentytwenty/
-Author: Mélanie Caillol
+Author: Arik Malenfant-Lacombe
 Author URI: https://wordpress.org/
 Description: Thème de base développé dans le cadre du cours 4W4
 Version: 1.0
@@ -10,7 +10,7 @@ Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-melanie
+Text Domain: 4w4-arik
 */
 /* /////////////////// 
 Variables
@@ -19,11 +19,11 @@ Variables
 Base
 /////////////////// */
 a {
-  color: black;
+  color: rgba(0, 0, 0, 0.69);
   text-decoration: none;
 }
 a:hover {
-  color: rgba(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0);
 }
 a:visited {
   color: rgba(0, 0, 0, 0.3);
@@ -36,47 +36,6 @@ a:visited {
 /* /////////////////// 
 Composants
 /////////////////// */
-/* .carte {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-}
-.carte--grande {
-  padding: 40px;
-}
-.carte--petite {
-  padding: 20px;
-}
-.carte__image img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-.carte__contenu {
-  margin-top: 15px;
-}
-.carte__titre {
-  font-size: 24px;
-  color: #333;
-}
-.carte__description {
-  font-size: 16px;
-  color: #666;
-}
-.carte__bouton {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.carte__bouton--actif {
-  background-color: #0056b3;
-}
-.carte__bouton:hover {
-  background-color: #0056b3;
-} */
-
 .carte {
   max-width: 80%;
   margin: 0 auto;
@@ -130,14 +89,13 @@ Composants
   background-color: rgb(242, 242, 242);
 }
 
-
 .menu {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  flex-wrap: wrap;
 }
 @media screen and (max-width: 700px) {
   .menu {
@@ -150,17 +108,19 @@ Composants
 
 .recherche {
   display: flex;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.recherche__input {
+  border: 1px solid rgb(168, 168, 168);
   height: 1.3rem;
   padding: 2px;
-  border: none;
+}
+.recherche__input {
   outline: none;
+  border: none;
+  color: rgb(142, 142, 142);
 }
-.recherche__input:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+.recherche:hover {
+  border: 1px solid rgb(0, 0, 0);
 }
+
 /* /////////////////// 
 Layout
 /////////////////// */
@@ -187,15 +147,17 @@ Layout
 
 .entete {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 30px 0;
+  padding-top: 3vh;
 }
 .entete__logo {
   margin: 0;
 }
 .entete__nav {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   position: static;
   align-items: center;
@@ -205,7 +167,6 @@ Layout
   .entete__nav {
     display: none;
     flex-direction: column;
-    height: 30vh;
     width: 100vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -219,7 +180,7 @@ Layout
 
 .global {
   margin: 0 auto;
-  width: 80vw;
+  max-width: 1000px;
 }
 
 .hero {
@@ -230,6 +191,12 @@ Layout
   padding-top: 10vh;
   font-size: 3rem;
   text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
+}
+.hero__contenu {
+  max-width: 80%;
+}
+.hero__description {
+  width: 40vw;
 }
 .hero__liens p, .hero button {
   display: flex;
@@ -248,8 +215,9 @@ Layout
   background-color: rgba(255, 255, 255, 0.668);
 }
 .hero__bouton:hover {
-  background-color: rgba(18, 237, 219, 0.881);
-}/*# sourceMappingURL=style.css.map */
+  background-color: rgba(255, 255, 255, 0.427);
+  cursor: pointer;
+}
 
 .galerie {
   max-width: 90%;
@@ -262,11 +230,6 @@ Layout
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 1vw;
-  row-gap: 2vh;
+  row-gap: 1vh;
   border-radius: 8px;
-}
-
-.galerie__images img{
-  width: 20%;
-  
-}
+}/*# sourceMappingURL=style.css.map */
