@@ -4,7 +4,7 @@
  */
 ?>
 <?php get_header() ?>
-<h4>search.php</h4>
+<!-- <h4>search.php</h4> -->
     <section class="populaire">
         <div class="boite__flex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

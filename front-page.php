@@ -3,7 +3,7 @@
 ?>
 
 <?php get_header() ?>
-<h4>front-page.php</h4>
+<!-- <h4>front-page.php</h4> -->
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
@@ -51,10 +51,11 @@
                     ?>
                     <h2 class="carte__titre"><?php the_title(); ?></h2>
                     <p class="carte__description"><?php echo wp_trim_words(get_the_excerpt(), 20, "...") ; ?></p>
-                    <a class="carte__bouton carte__bouton--actif"  href="<?php the_permalink(); ?>">Suite</a>
+                    
                     <?php the_category(); ?>
                     <p>Température minimale: <?php echo the_field("temperature_minimale");?> °C</p>
                     <p>Température maximale: <?php echo the_field("temperature_maximale");?> °C</p>
+                    <a class="carte__bouton carte__bouton--actif"  href="<?php the_permalink(); ?>">Voir plus...</a>
                 </div>
             </article>
 
