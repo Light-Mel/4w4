@@ -3,30 +3,15 @@
   max-width: 1000px;
 }
 
-.hero {
-  min-height: 100vh;
-  background-image: url("images/bgHeader.jpg");
+.populaire {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
 
-  &__titre {
-    padding-top: 10vh;
-    font-size: 3rem;
-    text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
-  }
-
-  &__liens p, button {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    margin-top: 2vh;
-  }
-
-  &__bouton {
-    display: flex;
-    align-items: center;
-    
-    height: 40px;
-    border: none;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.668)
-  }
+.boite__flex {
+  display: flex;
+  flex: 1 1 250px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
 }

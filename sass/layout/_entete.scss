@@ -1,45 +1,28 @@
-.burger {
-  display: none;
-  @media screen and (max-width:$point__rupture) {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-}
-
-.chk__burger {
-  display: none;
-}
-
-.chk__burger:checked ~ .entete__nav {
-  display: flex;
-}
-
-.entete {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__nav {
+.entete{
     display: flex;
-    flex-direction: row;
-    position: static;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    &__navigation {
+        @media screen and (max-width: 800px) {
+            position : absolute;
+            top:0;
+            right:0;
+            background-color: #fff;
+            padding : 20px;
+            flex-direction: column; 
+            width : 100vw;
+        }
+        width : auto;
+        position : static;
+        flex-direction: row; 
+        background-color: transparent;
 
-    @media screen and (max-width:$point__rupture) {
-      display: none;
-      flex-direction: column;
-      height: 30vh;
-      width: 100vw;
-      padding-top: 3vh;
-      padding-bottom: 3vh;
-      gap: 30px 0;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: #fff;
+
+
+
+        display: flex;
+        
+        align-items: center;
+                                                                   
     }
-  }
 }

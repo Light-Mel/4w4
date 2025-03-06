@@ -1,132 +1,129 @@
 @charset "UTF-8";
 /*
-Theme Name: 4W4 - Arik Malenfant-Lacombe
-Theme URI: https://wordpress.org/themes/twentytwenty/
-Author: Arik Malenfant-Lacombe
-Author URI: https://wordpress.org/
-Description: Thème de base développé dans le cadre du cours 4W4
+Theme Name: TP1 Mélanie Caillol
+Theme URI: https://referenced.ca
+Author: Mélanie Caillol
+Author URI: https://github.com/Light-Mel
+Description: Thème développé dans le cadre du cours 4w4
 Version: 1.0
-Tested up to: 6.2
+Requires at least: 6.0
+Tested up to: 5.3
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-arik
+Text Domain: tp1-mc
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
-/* /////////////////// 
-Variables
-/////////////////// */
-/* /////////////////// 
-Base
-/////////////////// */
-a {
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  color: rgba(0, 0, 0, 0.1);
-}
-a:visited {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-* {
-  font-family: sans-serif;
-}
-
-/* /////////////////// 
-Composants
-/////////////////// */
-.carte {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-}
-.carte--grande {
-  padding: 40px;
-}
-.carte--petite {
-  padding: 20px;
-}
-.carte__image img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-.carte__contenu {
-  margin-top: 15px;
-}
-.carte__titre {
-  font-size: 24px;
-  color: #333;
-}
-.carte__description {
+/* /////////////////////////////////
+Les variables
+//////////////////////////////////// */
+/* /////////////////////////////////
+Les balise de bases
+//////////////////////////////////// */
+body {
   font-size: 16px;
-  color: #666;
-}
-.carte__bouton {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.carte__bouton--actif {
-  background-color: #0056b3;
-}
-.carte__bouton:hover {
-  background-color: #0056b3;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1rem, 2.3vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+}
+
+h5 {
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
+}
+
+h6 {
+  font-size: clamp(0.8rem, 1.7vw, 1.2rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 1.7vw, 1rem);
+}
+
+/* /////////////////////////////////
+Les composants
+//////////////////////////////////// */
+/* ----------------------------------------- .menu */
 .menu {
   display: flex;
   flex-direction: row;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+  gap: 10px 0;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .menu {
     flex-direction: column;
   }
 }
-.menu__a {
-  padding: 2px 5px;
+.menu-item a {
+  text-decoration: none;
+  padding: 4px;
 }
 
 .recherche {
   display: flex;
+  height: 1.6rem;
+  width: 14rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .recherche__input {
-  height: 1.3rem;
-  padding: 2px;
   border: none;
   outline: none;
+  background-color: rgba(0, 0, 0, 0.01);
+  flex: 1 0 auto;
+  padding: 3px;
 }
 .recherche__input:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-/* /////////////////// 
-Layout
-/////////////////// */
-.burger {
-  display: none;
+.recherche__input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-style: italic;
 }
-@media screen and (max-width: 500px) {
-  .burger {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
+.recherche__img {
+  flex: 0 0 20px;
+  padding: 3px;
 }
 
-.chk__burger {
-  display: none;
-}
-
-.chk__burger:checked ~ .entete__nav {
+.carte {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carte--grande {
+  flex: 1 1 250px;
+}
+.carte__image img {
+  width: 100%;
+}
+.carte__contenu {
+  background-color: aliceblue;
+}
+/* /////////////////////////////////
+Les layouts
+//////////////////////////////////// */
+.global {
+  max-width: 1100px;
+  padding: 10vh 5vw;
+}
+
+.populaire .global {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .entete {
@@ -134,54 +131,59 @@ Layout
   justify-content: space-between;
   align-items: center;
 }
-.entete__nav {
-  display: flex;
-  flex-direction: row;
+.entete__navigation {
+  width: auto;
   position: static;
+  flex-direction: row;
+  background-color: transparent;
+  display: flex;
   align-items: center;
-  gap: 20px;
 }
-@media screen and (max-width: 500px) {
-  .entete__nav {
-    display: none;
-    flex-direction: column;
-    height: 30vh;
-    width: 100vw;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    gap: 30px 0;
+@media screen and (max-width: 800px) {
+  .entete__navigation {
     position: absolute;
     top: 0;
     right: 0;
     background-color: #fff;
+    padding: 20px;
+    flex-direction: column;
+    width: 100vw;
   }
 }
 
-.global {
-  margin: 0 auto;
-  max-width: 1000px;
+.hero {
+  background-image: url("images/maldives.jpg");
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
-.hero {
-  min-height: 100vh;
-  background-image: url("images/bgHeader.jpg");
+/*
+  --------------------------------- Layout du pied de page
+*/
+footer {
+  background-color: rgb(236, 136, 13);
+  color: #000;
 }
-.hero__titre {
-  padding-top: 10vh;
-  font-size: 3rem;
-  text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
-}
-.hero__liens p, .hero button {
+
+.piedpage {
   display: flex;
   flex-direction: column;
-  font-weight: bold;
-  margin-top: 2vh;
 }
-.hero__bouton {
+.piedpage__s1 {
   display: flex;
-  align-items: center;
-  height: 40px;
-  border: none;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.668);
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.piedpage__s1__externe {
+  flex: 0 0 20%;
+}
+.piedpage__s1__externe .menu {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1__adresse {
+  flex: 0 0 40%;
+}
+.piedpage__s1__description {
+  flex: 1 0 400px;
 }/*# sourceMappingURL=style.css.map */

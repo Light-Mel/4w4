@@ -1,6 +1,9 @@
-# Exercice 1
-## Cours: 4W4-Conception d'interface et développement Web
+# TP1
 
-Créer une page d'accueil en utilisant le standard BEM et Sass pour reproduire le contenu de maquette
-Auteur: Mélanie Caillol
-### Github-page: https://light-mel.github.io/4w4/
+## Concevoir un site Wordpress pour un club de voyage
+
+### Auteur: Mélanie Caillol
+
+La réalisation de ce thème permettra d'optimiser la présentation d'un contenu spécifique sur différentes destination de voyages.
+
+#### Site en ligne sur WHC:https://gftnth00.mywhc.ca/4w4_42/
