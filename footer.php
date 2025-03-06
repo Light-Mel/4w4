@@ -14,7 +14,7 @@
             <div class="piedpage__s1__adresse">
                 <div class="piedpage__s1__adresse">
                   <p class="piedpage__s1__coord">
-                    Arik Malenfant-Lacombe
+                    Mélanie Caillol
                   </p>
                   <p class="piedpage__s1__coord">
                       2901 rue Sherbrooke E, 123-456-7899 info@cmaisonneuve.qc.ca
@@ -33,7 +33,7 @@
             </div>
 
             <div class="piedpage__s1__description">
-                Notre site comprends des microtransactions. Ne pas utiliser la barre de recherche tant que vous n'avez pas payé 50$ à Arik Malenfant-Lacombe. Requis pour chaque utilisation.
+                Si vous lisez ceci, il est déjà trop tard, nous possédons déjà votre numéro de carte de crédit et de sécurité sociale :]
             </div>
         </section>
         

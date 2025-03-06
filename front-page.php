@@ -7,16 +7,18 @@
     <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
-                Club de voyages IHOP
+            Des voyages haut en couleur avec Gaudet!
             </h1>
             <p class="hero__description">
-                Avec IHOP, vous allez faire les plus beaux voyages de votre vie! Faites nous confiance, on vous en supplie...
+            Chez Gaudet, nous nous donnons pour mission de vous faire vivre les plus beaux voyages de vos rêves. 
+            Chaque salon FUN vous offrira une multide de conseils pour vos escapades, qu'elles soient en famille, seul ou avec des amis. 
+            N'attendez plus! Partez à l'aventure vers de nouveaux horizons avec nous!
             </p>
             <button class="hero__bouton">
                 Inscription
             </button>
             <p class="hero__info-top">
-                Arik Malenfant-Lacombe
+                Mélanie Caillol
             </p>
             <p class="hero__info">
                 2901 Sherbrooke St E, 123-456-7899, info@cmaisonneuve.qc.ca
