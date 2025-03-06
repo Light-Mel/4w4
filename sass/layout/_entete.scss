@@ -1,28 +1,53 @@
-.entete{
+.burger {
+  display: none;
+  z-index: 3;
+  @media screen and (max-width:$point__rupture) {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.chk__burger {
+  display: none;
+}
+
+.chk__burger:checked ~ .entete__nav {
+  display: flex;
+}
+
+.entete {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 3vh;
+
+  &__logo {
+    margin: 0;
+  }
+
+  &__nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: static;
     align-items: center;
-    &__navigation {
-        @media screen and (max-width: 800px) {
-            position : absolute;
-            top:0;
-            right:0;
-            background-color: #fff;
-            padding : 20px;
-            flex-direction: column; 
-            width : 100vw;
-        }
-        width : auto;
-        position : static;
-        flex-direction: row; 
-        background-color: transparent;
+    gap: 20px;
 
-
-
-
-        display: flex;
-        
-        align-items: center;
-                                                                   
+    @media screen and (max-width:$point__rupture) {
+      display: none;
+      flex-direction: column;
+      width: 100vw;
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+      gap: 30px 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #fff;
     }
+  }
 }

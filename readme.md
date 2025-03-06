@@ -1,9 +1,9 @@
-# TP1
+# Travail Pratqiue 1
+## Cours 4W4 Conception d'interface et dev web
 
-## Concevoir un site Wordpress pour un club de voyage
+Créer un site web avec scss, html, php et autres qui sera déployé sur WordPress et Web Hosting Canada.
 
-### Auteur: Mélanie Caillol
+Auteur: Mélanie Caillol
 
-La réalisation de ce thème permettra d'optimiser la présentation d'un contenu spécifique sur différentes destination de voyages.
-
-#### Site en ligne sur WHC:https://gftnth00.mywhc.ca/4w4_42/
+### Site Github: https://Light-Mel.github.io/4w4/
+### Site WHC: https://gftnth00.mywhc.ca/4w4_42/

@@ -1,15 +1,22 @@
-    <?php get_header(); ?>
-    <h1>-------- INDEX.PHP ----------</h1>
+<?php
+/**
+ *  index.php est le modèle par défaut
+ *  si aucun modèle peut satisfaire la requête http dans ce cas c'est index.php qui affichera le contenu de la page
+ */
+?>
+<?php get_header() ?>
+<h4>index.php</h4>
     <section class="populaire">
-        <div class="global">
+        <div class="boite__flex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <article>
-                <h2><?php the_title(); ?></h2>
-                <div><?php the_content() ?>
+            <article class="populaire__article">
+             
+                <h2 class="populaire__titre"><?php the_title(); ?></h2>
+                <div class="populaire__contenu"><?php the_content(); ?></div>
+            </article>
             <?php endwhile; endif; ?>
         </div>
     </section>
     <?php get_footer(); ?>
-   
 </body>
 </html>

@@ -1,63 +1,96 @@
 @charset "UTF-8";
 /*
-Theme Name: TP1 Mélanie Caillol
-Theme URI: https://referenced.ca
+Theme Name: 4W4 - Mélanie Caillol
+Theme URI: https://wordpress.org/themes/twentytwenty/
 Author: Mélanie Caillol
 Author URI: https://github.com/Light-Mel
-Description: Thème développé dans le cadre du cours 4w4
+Description: Thème de base développé dans le cadre du cours 4W4
 Version: 1.0
-Requires at least: 6.0
-Tested up to: 5.3
+Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: tp1-mc
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Text Domain: 4w4-mc
 */
-/* /////////////////////////////////
-Les variables
-//////////////////////////////////// */
-/* /////////////////////////////////
-Les balise de bases
-//////////////////////////////////// */
-body {
-  font-size: 16px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+/* /////////////////// 
+Variables
+/////////////////// */
+/* /////////////////// 
+Base
+/////////////////// */
+a {
+  color: rgba(0, 0, 0, 0.69);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-  font-size: clamp(2rem, 3vw, 5rem);
+* {
+  font-family: sans-serif;
 }
 
-h2 {
-  font-size: clamp(1.5rem, 2.5vw, 3rem);
+/* /////////////////// 
+Composants
+/////////////////// */
+.carte {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 2vh;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.253);
+}
+.carte--grande {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 4%;
+  padding: 10px;
+}
+@media screen and (max-width: 700px) {
+  .carte--grande {
+    flex-direction: column;
+  }
+}
+.carte__contenu {
+  margin: 0;
+  margin-bottom: 1vh;
+  padding-top: 1vh;
+}
+.carte__input {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid rgb(0, 255, 242);
+  color: rgb(142, 142, 142);
+}
+.carte__input:hover {
+  border: 2px solid rgb(0, 190, 180);
+}
+.carte__bouton {
+  padding: 10px 20px;
+  margin-top: 1vh;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 255, 242);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.carte__bouton--actif {
+  background-color: white;
+}
+.carte__bouton:hover {
+  background-color: rgb(242, 242, 242);
 }
 
-h3 {
-  font-size: clamp(1rem, 2.3vw, 2rem);
-}
-
-h4 {
-  font-size: clamp(0.9rem, 2vw, 1.5rem);
-}
-
-h5 {
-  font-size: clamp(0.9rem, 2vw, 1.3rem);
-}
-
-h6 {
-  font-size: clamp(0.8rem, 1.7vw, 1.2rem);
-}
-
-p {
-  font-size: clamp(0.8rem, 1.7vw, 1rem);
-}
-
-/* /////////////////////////////////
-Les composants
-//////////////////////////////////// */
-/* ----------------------------------------- .menu */
 .menu {
   display: flex;
   flex-direction: row;
@@ -76,98 +109,155 @@ Les composants
 
 .recherche {
   display: flex;
-  height: 1.6rem;
-  width: 14rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(168, 168, 168);
+  height: 1.3rem;
+  padding: 2px;
 }
 .recherche__input {
-  border: none;
   outline: none;
-  background-color: rgba(0, 0, 0, 0.01);
-  flex: 1 0 auto;
-  padding: 3px;
+  border: none;
+  color: rgb(0, 0, 0);
 }
-.recherche__input:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+.recherche__bouton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
-.recherche__input::placeholder {
-  color: rgba(0, 0, 0, 0.2);
-  font-style: italic;
-}
-.recherche__img {
-  flex: 0 0 20px;
-  padding: 3px;
+.recherche:hover {
+  border: 1px solid rgb(0, 0, 0);
 }
 
-.carte {
+.hero {
+  min-height: 100vh;
+  background-image: url("images/bgHeader.jpg");
+}
+.hero__titre {
+  padding-top: 10vh;
+  font-size: 3rem;
+  text-shadow: 3px 3px 3px rgba(2, 159, 91, 0.707);
+}
+.hero__contenu {
+  max-width: 80%;
+}
+.hero__description {
+  width: 40vw;
+}
+.hero__liens p, .hero button {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
-.carte--grande {
-  flex: 1 1 250px;
+.hero__bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.668);
 }
-.carte__image img {
-  width: 100%;
+.hero__bouton:hover {
+  background-color: rgba(255, 255, 255, 0.427);
+  cursor: pointer;
 }
-.carte__contenu {
-  background-color: aliceblue;
+.hero__info-top {
+  margin: 0;
+  margin-top: 5vh;
 }
-/* /////////////////////////////////
-Les layouts
-//////////////////////////////////// */
-.global {
-  max-width: 1100px;
-  padding: 10vh 5vw;
+.hero__info {
+  margin: 0;
 }
 
-.populaire .global {
+/* /////////////////// 
+Layout
+/////////////////// */
+.burger {
+  display: none;
+  z-index: 3;
+}
+@media screen and (max-width: 700px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.chk__burger {
+  display: none;
+}
+
+.chk__burger:checked ~ .entete__nav {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .entete {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  padding-top: 3vh;
 }
-.entete__navigation {
-  width: auto;
-  position: static;
-  flex-direction: row;
-  background-color: transparent;
+.entete__logo {
+  margin: 0;
+}
+.entete__nav {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: static;
   align-items: center;
+  gap: 20px;
 }
-@media screen and (max-width: 800px) {
-  .entete__navigation {
+@media screen and (max-width: 700px) {
+  .entete__nav {
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    gap: 30px 0;
     position: absolute;
     top: 0;
     right: 0;
     background-color: #fff;
-    padding: 20px;
-    flex-direction: column;
-    width: 100vw;
   }
 }
 
-.hero {
-  background-image: url("images/maldives.jpg");
-  background-repeat: no-repeat;
-  min-height: 100vh;
+.global {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.populaire {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.boite__flex {
+  display: flex;
+  flex: 1 1 250px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
 }
 
 /*
   --------------------------------- Layout du pied de page
 */
 footer {
-  background-color: rgb(236, 136, 13);
+  background-color: rgb(162, 162, 162);
   color: #000;
 }
 
 .piedpage {
   display: flex;
   flex-direction: column;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 .piedpage__s1 {
   display: flex;
@@ -184,6 +274,23 @@ footer {
 .piedpage__s1__adresse {
   flex: 0 0 40%;
 }
+.piedpage__s1__coord {
+  margin: 0;
+}
 .piedpage__s1__description {
-  flex: 1 0 400px;
+  flex: 1 0 300px;
+}
+.piedpage__s1__icone-app {
+  margin-top: 3vh;
+}
+
+.piedpage__s1__adresse__recherche .recherche {
+  margin-top: 3vh;
+  border: none;
+}
+.piedpage__s1__adresse__recherche .recherche:hover {
+  border: none;
+}
+.piedpage__s1__adresse__recherche .recherche__input:hover {
+  background-color: rgb(236, 236, 236);
 }/*# sourceMappingURL=style.css.map */
