@@ -4,7 +4,7 @@
  *  si aucun modèle peut satisfaire la requête http dans ce cas c'est index.php qui affichera le contenu de la page
  */
 ?>
-<?php get_header() ?>
+<?php get_header(); ?>
 <!-- <h4>index.php</h4> -->
     <section class="populaire">
         <div class="boite__flex global">

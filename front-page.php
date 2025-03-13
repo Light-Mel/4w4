@@ -11,7 +11,7 @@
             </h1>
             <p class="hero__description">
             Chez Gaudet, nous nous donnons pour mission de vous faire vivre les plus beaux voyages de vos rêves. 
-            Chaque salon FUN vous offrira une multide de conseils pour vos escapades, qu'elles soient en famille, seul ou avec des amis. 
+            Chaque salon FUN vous offrira une multitude de conseils pour vos escapades, qu'elles soient en famille, seul, ou avec des amis. 
             N'attendez plus! Partez à l'aventure vers de nouveaux horizons avec nous!
             </p>
             <button class="hero__bouton">
@@ -21,7 +21,7 @@
                 Mélanie Caillol
             </p>
             <p class="hero__info">
-                2901 Sherbrooke St E, 123-456-7899, info@cmaisonneuve.qc.ca
+                2901 Sherbrooke St E<br> 123-456-7899<br> info@cmaisonneuve.qc.ca
             </p>
             <div class="hero__icone-app">
                 <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
