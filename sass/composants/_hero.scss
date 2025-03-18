@@ -9,6 +9,7 @@
   &__titre {
     font-size: 3rem; 
     text-shadow: -1px 1px 19px rgba(2, 159, 91, 0.707); 
+    text-align: center;
   }
 
   &__contenu {
@@ -20,6 +21,10 @@
     align-items: center; 
     justify-content: center; 
     flex-direction: column; 
+    @media screen and (max-width: 800px) {
+      border-radius: 0;
+      background-color: rgba(225, 225, 225, 0.25);
+    }
   }
 
   &__description {
@@ -45,11 +50,14 @@
     border-radius: 4px; 
     background-color: rgba(6, 183, 201, 0.668); 
     font-size: 1.5rem; 
+    @media screen and (max-width: 800px) {
+      width: 50%;
+    }
     &:hover {
     background-color: rgb(26, 236, 226, 0.668); 
     cursor: pointer; 
     animation: grossirBouton 1s forwards; 
-    }
+  }
   }
 
   @keyframes grossirBouton{ 

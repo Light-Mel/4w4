@@ -19,8 +19,8 @@
                     <p class="carte__description"><?php echo wp_trim_words(get_the_excerpt(), 20, "...") ; ?></p>
                     
                     <?php the_category(); ?>
-                    <?php echo the_field("temperature_minimale"); ?>
-                    <?php echo the_field("temperature_maximale"); ?>
+                    <p>Température minimale: <?php echo the_field("temperature_minimale");?> °C</p>
+                    <p>Température maximale: <?php echo the_field("temperature_maximale");?> °C</p>
                     <a class="carte__bouton carte__bouton--actif"  href="<?php the_permalink(); ?>">Voir plus...</a>
                 </div>
             </article>

@@ -10,9 +10,8 @@
             ?>  
                 <h2><?php the_title(); ?></h2>
             <div class="carteSingle__temperature"><?php the_content() ?>
-                <p>Température maximum: <?php the_field('temperature_maximum') ?>&#176;C</p>
-                <p>Température minimum: <?php the_field('temperature_minimum') ?>&#176;C</p>
-                <p>Température moyenne: <?php the_field('temperature_moyenne') ?>&#176;C</p>
+            <p>Température minimale: <?php echo the_field("temperature_minimale");?> °C</p>
+            <p>Température maximale: <?php echo the_field("temperature_maximale");?> °C</p>
             <?php endwhile; endif; ?>
         </div>
     </section>
