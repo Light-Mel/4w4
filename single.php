@@ -6,7 +6,7 @@
 <?php get_header() ?>
 <!-- <h4>single.php</h4> -->
     <section class="populaire">
-        <div class="global">
+        <div class="global carteSingle">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <article class="populaire__article">
                 <?php 

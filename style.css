@@ -111,6 +111,26 @@ Composants
   animation: remplir 1s forwards;
 }
 
+.carteSingle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carteSingle__temperature {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.carteSingle img {
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
