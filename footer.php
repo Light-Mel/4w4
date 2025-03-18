@@ -17,7 +17,7 @@
                     Mélanie Caillol
                   </p>
                   <p class="piedpage__s1__coord">
-                      2901 rue Sherbrooke E, 123-456-7899 info@cmaisonneuve.qc.ca
+                      2901 rue Sherbrooke E<br> 123-456-7899<br> info@cmaisonneuve.qc.ca
                   </p> 
                   <div class="piedpage__s1__icone-app">
                     <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
