@@ -120,6 +120,8 @@ Composants
 @media screen and (max-width: 800px) {
   .menu {
     flex-direction: column;
+    padding: 0;
+    align-items: flex-end;
   }
 }
 .menu-item a {
@@ -298,36 +300,57 @@ Layout
   --------------------------------- Layout du pied de page
 */
 footer {
-  background-color: rgb(162, 162, 162);
+  background-color: rgb(159, 163, 200);
   color: #000;
 }
 
 .piedpage {
   display: flex;
   flex-direction: column;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+@media screen and (max-width: 800px) {
+  .piedpage {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .piedpage__s1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 5rem;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.piedpage__s1__externe {
-  flex: 0 0 20%;
+@media screen and (max-width: 800px) {
+  .piedpage__s1 {
+    gap: 1rem;
+  }
+}
+.piedpage__s1__menuRecherhe {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
 }
 .piedpage__s1__externe .menu {
   display: flex;
-  flex-direction: column;
-}
-.piedpage__s1__adresse {
-  flex: 0 0 40%;
+  flex-wrap: wrap;
 }
 .piedpage__s1__coord {
   margin: 0;
 }
 .piedpage__s1__description {
-  flex: 1 0 300px;
+  width: 30%;
+}
+@media screen and (max-width: 800px) {
+  .piedpage__s1__description {
+    width: 50%;
+  }
 }
 .piedpage__s1__icone-app {
   margin-top: 3vh;
@@ -342,4 +365,16 @@ footer {
 }
 .piedpage__s1__adresse__recherche .recherche__input:hover {
   background-color: rgb(236, 236, 236);
+}
+
+@media screen and (min-width: 800px) {
+  .recherche__cell {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .recherche__ordi {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

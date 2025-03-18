@@ -3,30 +3,49 @@
 */
 
 footer{
-  background-color: rgb(162, 162, 162); // devrait devenir une variable de couleur
+  background-color: rgb(159, 163, 200); // devrait devenir une variable de couleur
   color : #000;  // variable !!
 }
 
 .piedpage{
     display: flex;
     flex-direction: column;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    @media screen and (max-width: 800px) {
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     &__s1{
         display: flex;
         flex-wrap: wrap;
-        gap: 3rem;
-
+        gap: 5rem;
+        align-items: center;
+        justify-content:space-evenly;
+        @media screen and (max-width: 800px) {
+          gap: 1rem;
+        }
+      
+        &__menuRecherhe{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+      }
         &__externe {
-            flex : 0 0 20%;
+            // flex : 0 0 20%;
             & .menu { //ul
                 display : flex;
-                flex-direction: column;
+                flex-wrap: wrap;
+                // flex-direction: column;
             }
         }
         &__adresse{
-            flex : 0 0 40%;
+            // flex : 0 0 40%;
             // &__recherche{
             // }
         }
@@ -34,7 +53,11 @@ footer{
           margin: 0;
         }
         &__description{
-            flex:1 0 300px;
+            // flex:1 0 300px;
+            width: 30%;
+            @media screen and (max-width: 800px) {
+             width: 50%;
+            }
         }
         &__icone-app {
           margin-top: 3vh;
@@ -53,4 +76,19 @@ footer{
   &__input:hover {
     background-color: rgb(236, 236, 236);
   }
+}
+
+
+.recherche__cell{
+  @media screen and (min-width: 800px) {
+    display:none;
+    }
+
+   
+}
+
+.recherche__ordi{
+  @media screen and (max-width: 800px) {
+    display:none;
+    }
 }

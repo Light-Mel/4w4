@@ -17,10 +17,11 @@
                     ?>
                     <h2 class="carte__titre"><?php the_title(); ?></h2>
                     <p class="carte__description"><?php echo wp_trim_words(get_the_excerpt(), 20, "...") ; ?></p>
-                    <a class="carte__bouton carte__bouton--actif"  href="<?php the_permalink(); ?>">Suite</a>
+                    
                     <?php the_category(); ?>
                     <?php echo the_field("temperature_minimale"); ?>
                     <?php echo the_field("temperature_maximale"); ?>
+                    <a class="carte__bouton carte__bouton--actif"  href="<?php the_permalink(); ?>">Voir plus...</a>
                 </div>
             </article>
 <?php endwhile; endif; ?>

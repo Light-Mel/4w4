@@ -6,7 +6,7 @@
 ?>
 
 <?php get_header() ?>
-  <h4>category.php</h4>
+  <!-- <h4>category.php</h4> -->
     <section class="populaire">
         <div class="boite__flex global">
             <?php get_template_part("gabarit/carte"); ?>
