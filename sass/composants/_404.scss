@@ -1,0 +1,26 @@
+// composant Erreur 404
+.erreur404{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3%;
+
+    &__ligne{
+        display: flex;
+        width: 50%;
+        border: none;
+        height: 5px;
+        background-color: #000000;
+        border-radius: 3px;
+    }
+
+    &__img{
+        width:42%;
+    }
+
+    &__titre{
+        font-size: 2.5rem;
+    }
+}

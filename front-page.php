@@ -2,7 +2,13 @@
 // modele front-page.php, affiche la page accueil
 ?>
 
-<?php get_header() ?>
+<?php 
+    get_header();
+    $hero_auteur = get_theme_mod('general_auteur', 'Default Title');
+    $hero_email = get_theme_mod('general_email','Default Title');
+    $hero_tel = get_theme_mod('general_telephone','Default Title');
+    $hero_adresse = get_theme_mod('general_adresse','Default Title');
+ ?>
 <!-- <h4>front-page.php</h4> -->
     <section class="hero">
         <div class="hero__contenu global">
@@ -17,11 +23,18 @@
             <button class="hero__bouton">
                 Inscription
             </button>
+            
             <p class="hero__info-top">
-                Mélanie Caillol
+            <?php echo($hero_auteur); ?>
             </p>
             <p class="hero__info">
-                2901 Sherbrooke St E<br> 123-456-7899<br> info@cmaisonneuve.qc.ca
+                <?php echo($hero_email); ?>
+            </p>
+            <p class="hero__info">
+                <?php echo($hero_tel); ?>
+            </p>
+            <p class="hero__info">
+                <?php echo($hero_adresse); ?>
             </p>
             <div class="hero__icone-app">
                 <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">

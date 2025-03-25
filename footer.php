@@ -1,5 +1,10 @@
 <!-- format du footer -->
-
+<?php 
+    $hero_auteur = get_theme_mod('general_auteur', 'Default Title');
+    $hero_email = get_theme_mod('general_email','Default Title');
+    $hero_tel = get_theme_mod('general_telephone','Default Title');
+    $hero_adresse = get_theme_mod('general_adresse','Default Title');
+ ?>
 <footer>
     <div class="piedpage global">
         <section class="piedpage__s1">
@@ -19,11 +24,17 @@
             <div class="piedpage__s1__adresse">
                 <div class="piedpage__s1__adresse">
                   <p class="piedpage__s1__coord">
-                    Mélanie Caillol
+                  <?php echo($hero_auteur); ?>
                   </p>
                   <p class="piedpage__s1__coord">
-                      2901 rue Sherbrooke E<br> 123-456-7899<br> info@cmaisonneuve.qc.ca
-                  </p> 
+                      <?php echo($hero_email); ?>
+                  </p>
+                  <p class="piedpage__s1__coord">
+                      <?php echo($hero_tel); ?>
+                  </p>
+                  <p class="piedpage__s1__coord">
+                      <?php echo($hero_adresse); ?>
+                  </p>
                   <div class="piedpage__s1__icone-app">
                     <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
                     <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
