@@ -10,6 +10,10 @@ $introuvable_img = get_theme_mod('erreur_image', 'Default Title');
            <hr class="erreur404__ligne">
            <h2>Bien tenté, mais la page que vous recherchez n'existe pas!</h2>
            <p>Veuillez vérifier s'il y a une faute d'orthographe dans votre recherche...</p>
+           <a href="front-page."></a>
+           <button class="hero__bouton erreur404__bouton">
+                Retour à l'accueil
+            </button>
         </div>
     </section>
     <?php get_footer(); ?>

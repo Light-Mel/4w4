@@ -80,11 +80,11 @@ Composants
 .carte__input {
   width: 100%;
   margin: 0 auto;
-  border: 2px solid rgb(0, 255, 242);
+  border: 2px solid #81d5e0;
   color: rgb(142, 142, 142);
 }
 .carte__input:hover {
-  border: 2px solid rgb(0, 190, 180);
+  border: 2px solid #aceff6;
 }
 .carte__bouton {
   padding: 10px 100px;
@@ -92,7 +92,7 @@ Composants
   text-align: center;
   background-color: white;
   color: black;
-  border: 2px solid rgb(0, 255, 242);
+  border: 2px solid #81d5e0;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -104,7 +104,7 @@ Composants
     background-color: white;
   }
   to {
-    background-color: rgba(26, 236, 226, 0.668);
+    background-color: #81d5e0;
   }
 }
 .carte__bouton:hover {
@@ -217,7 +217,7 @@ Composants
   width: 30%;
   border: none;
   border-radius: 4px;
-  background-color: rgba(6, 183, 201, 0.668);
+  background-color: #81d5e0;
   font-size: 1.5rem;
 }
 @media screen and (max-width: 800px) {
@@ -226,7 +226,7 @@ Composants
   }
 }
 .hero__bouton:hover {
-  background-color: rgba(26, 236, 226, 0.668);
+  background-color: #aceff6;
   cursor: pointer;
   animation: grossirBouton 1s forwards;
 }
@@ -260,6 +260,7 @@ Composants
   flex-wrap: wrap;
   flex-direction: column;
   padding: 3%;
+  font-weight: bold;
 }
 .erreur404__ligne {
   display: flex;
@@ -274,6 +275,9 @@ Composants
 }
 .erreur404__titre {
   font-size: 2.5rem;
+}
+.erreur404__bouton {
+  font-weight: bold;
 }
 
 /* /////////////////// 
