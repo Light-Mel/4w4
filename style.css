@@ -280,6 +280,26 @@ Composants
   font-weight: bold;
   width: 100%;
 }
+.erreur404__suggestions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.erreur404__suggestions .menu {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+.erreur404__suggestions p {
+  margin-bottom: 0;
+}
+.erreur404 .hero__icone-app {
+  margin-top: 20px;
+}
 
 /* /////////////////// 
 Layout
@@ -404,6 +424,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0;
 }
 .piedpage__s1__externe .menu-item a {
   padding: 0;

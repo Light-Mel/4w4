@@ -10,11 +10,7 @@ $introuvable_img = get_theme_mod('erreur_image', 'Default Title');
            <hr class="erreur404__ligne">
            <h2>Bien tenté, mais la page que vous recherchez n'existe pas!</h2>
            <p>Veuillez vérifier s'il y a une faute d'orthographe dans votre recherche...</p>
-           <a href="http://localhost:81/4w4/">
-                <button class="hero__bouton erreur404__bouton">
-                    Retour à l'accueil
-                </button>
-           </a>
+          
            <div class="erreur404__suggestions">
            <p>Destinations que vous aimeriez peut-être :</p>
            <?php wp_nav_menu(array(
@@ -23,7 +19,15 @@ $introuvable_img = get_theme_mod('erreur_image', 'Default Title');
                     "container_class" => "erreur404__menuSuggestions"
                 )); ?>
            </div>
-           
+
+           <a href="http://localhost:81/4w4/">
+                <button class="hero__bouton erreur404__bouton">
+                    Retour à l'accueil
+                </button>
+           </a>
+           <div class="hero__icone-app">
+                <?php get_template_part('gabarit/social'); ?>
+            </div>
         </div>
     </section>
     <?php get_footer(); ?>
