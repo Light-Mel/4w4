@@ -38,11 +38,19 @@ footer{
       }
         &__externe {
             // flex : 0 0 20%;
+            padding: 0;
             & .menu { //ul
                 display : flex;
-                flex-wrap: wrap;
+                // flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
                 // flex-direction: column;
             }
+
+            & .menu-item a { //ul
+              padding: 0;
+              // flex-direction: column;
+          }
         }
         &__coord {
           margin: 0;

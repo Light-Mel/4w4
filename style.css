@@ -278,6 +278,7 @@ Composants
 }
 .erreur404__bouton {
   font-weight: bold;
+  width: 100%;
 }
 
 /* /////////////////// 
@@ -396,9 +397,16 @@ footer {
   justify-content: center;
   width: 30%;
 }
+.piedpage__s1__externe {
+  padding: 0;
+}
 .piedpage__s1__externe .menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.piedpage__s1__externe .menu-item a {
+  padding: 0;
 }
 .piedpage__s1__coord {
   margin: 0;
