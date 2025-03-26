@@ -20,11 +20,18 @@ $introuvable_img = get_theme_mod('erreur_image', 'Default Title');
                 )); ?>
            </div>
 
-           <a href="http://localhost:81/4w4/">
+           <!-- <a href="http://localhost:81/4w4/">
+                <button class="hero__bouton erreur404__bouton">
+                    Retour à l'accueil
+                </button>
+           </a> -->
+
+           <a href="https://gftnth00.mywhc.ca/4w4_42/">
                 <button class="hero__bouton erreur404__bouton">
                     Retour à l'accueil
                 </button>
            </a>
+           
            <div class="hero__icone-app">
                 <?php get_template_part('gabarit/social'); ?>
             </div>
