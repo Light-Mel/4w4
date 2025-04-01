@@ -326,13 +326,23 @@ Composants
   justify-content: space-evenly;
   gap: 2%;
   padding: 0;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+@media screen and (max-width: 800px) {
+  .erreur404__leMenu .menu {
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    row-gap: 10px;
+  }
 }
 .erreur404__leMenu a {
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 3%;
   border: none;
   border-radius: 4px;
   background-color: #ffe217;
@@ -371,7 +381,7 @@ Composants
 }
 .erreur404__recherche .recherche {
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-bottom: 5%;
   padding-top: 0;
   padding-left: 0;
@@ -387,9 +397,17 @@ Composants
   color: #f7b731;
   background-color: transparent;
   border-bottom: 5px solid #f7b731;
+  padding: 19px 0 12px 8px;
+  font-size: 1.5rem;
 }
 .erreur404__recherche img {
   display: none;
+}
+.erreur404__recherche input::placeholder {
+  font-weight: bold;
+  opacity: 1;
+  color: #f7b731;
+  font-size: 1.5rem;
 }
 
 /* /////////////////// 
