@@ -323,7 +323,21 @@ Composants
 }
 .erreur404__leMenu .menu {
   display: flex;
+  justify-content: space-evenly;
+  gap: 2%;
   padding: 0;
+}
+.erreur404__leMenu a {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffe217;
+  color: black;
+  font-size: 1rem;
 }
 .erreur404__menuSuggestion {
   font-weight: bold;
@@ -355,8 +369,8 @@ Composants
 .erreur404__suggestions p {
   margin-bottom: 0;
 }
-.erreur404 .hero__icone-app {
-  margin-top: 20px;
+.erreur404__recherche {
+  color: #f7b731;
 }
 
 /* /////////////////// 

@@ -37,7 +37,7 @@ $introuvable_soustitre = get_theme_mod('erreur_texte', 'Default Title');
            </div>
 
            <!-- Barre de recherche -->
-           <div class="entete__recherche">
+           <div class="erreur404__recherche">
                     <?php get_search_form() ?>
             </div>
         <!-- </div> -->

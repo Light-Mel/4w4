@@ -84,7 +84,23 @@
 
         & .menu{
             display: flex;
+            justify-content: space-evenly;
+            gap: 2%;
             padding: 0;
+        }
+        & a{
+            font-weight: bold;
+            // width: 100%;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            // height: 60px; 
+            padding: 5px;
+            border: none; 
+            border-radius: 4px; 
+            background-color: $couleur__intraBouton; 
+            color: black;
+            font-size: 1rem; 
         }
     }
 
@@ -124,7 +140,11 @@
         }
     }
 
-    & .hero__icone-app{
-        margin-top: 20px;
+    // & .hero__icone-app{
+    //     margin-top: 20px;
+    // }
+
+    &__recherche{
+        color: $couleur__intraTexte;
     }
 }

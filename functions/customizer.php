@@ -50,7 +50,7 @@ function theme_31w_customize_register($wp_customize) {
   ));
 
 
-  // numero de telephone footer
+  // numéro de téléphone footer
   $wp_customize->add_setting('general_telephone', array(
     'default' => __('', 'theme_31w'),
     'sanitize_callback' => 'sanitize_text_field'
