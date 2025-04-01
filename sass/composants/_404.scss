@@ -145,6 +145,33 @@
     // }
 
     &__recherche{
-        color: $couleur__intraTexte;
+        
+        & .recherche{
+            border:none;
+            font-size: 1rem;
+            padding-bottom: 5%;
+            padding-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+            &__bouton{
+                display: none;
+               
+            }
+        }
+        & form{
+            color: $couleur__intraTexte;
+            
+            
+        }
+
+        & input{
+            color: $couleur__intraTexte;
+            background-color: transparent;
+            border-bottom: 5px solid $couleur__intraTexte;
+        }
+
+        & img{
+            display: none;
+        }
     }
 }

@@ -369,8 +369,27 @@ Composants
 .erreur404__suggestions p {
   margin-bottom: 0;
 }
-.erreur404__recherche {
+.erreur404__recherche .recherche {
+  border: none;
+  font-size: 1rem;
+  padding-bottom: 5%;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.erreur404__recherche .recherche__bouton {
+  display: none;
+}
+.erreur404__recherche form {
   color: #f7b731;
+}
+.erreur404__recherche input {
+  color: #f7b731;
+  background-color: transparent;
+  border-bottom: 5px solid #f7b731;
+}
+.erreur404__recherche img {
+  display: none;
 }
 
 /* /////////////////// 
