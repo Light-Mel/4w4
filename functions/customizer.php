@@ -4,7 +4,7 @@
 function theme_31w_customize_register($wp_customize) {
 
   /*
-  *** SECTION GENERAL ***
+  *** SECTION GENERAL *********************************************************************************************
   */
   $wp_customize->add_section('general_section', array(
     'title' => __('Infos Générales', 'theme_31w'),
@@ -66,7 +66,7 @@ function theme_31w_customize_register($wp_customize) {
 
 
   /*
-  *** SECTION HERO ***
+  *** SECTION HERO ********************************************************************************************
   */
   $wp_customize->add_section('hero_section', array(
     'title' => __('Infos Hero', 'theme_31w'),
@@ -87,7 +87,7 @@ function theme_31w_customize_register($wp_customize) {
 
 
   /*
-  *** SECTION FOOTER ***
+  *** SECTION FOOTER *****************************************************************************************
   */
   $wp_customize->add_section('footer_section', array(
     'title' => __('Infos Footer', 'theme_31w'),
@@ -107,10 +107,41 @@ function theme_31w_customize_register($wp_customize) {
   ));
 
   /*
-  *** SECTION 404 ***
+  *** SECTION 404 **************************************************************************************************
   */
 
-$wp_customize->add_section('erreur_section', array(
+// VIELLE VERSION
+// $wp_customize->add_section('erreur_section', array(
+//   'title' => __('Infos Erreur', 'theme_31w'),
+//   'priority' => 30,
+// ));
+
+// // background
+// $wp_customize->add_setting('erreur_image', array(
+//   'default' => '',
+//   'sanitize_callback' => 'esc_url_raw',
+// ));
+
+// $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'erreur_image', array(
+//   'label' => __('Image Erreur', 'theme_31w'),
+//   'section' => 'erreur_section',
+// )));
+
+
+// // texte
+// $wp_customize->add_setting('erreur_texte', array(
+//   'default' => __('', 'theme_31w'),
+//   'sanitize_callback' => 'sanitize_text_field'
+// ));
+
+// $wp_customize->add_control('erreur_texte', array(
+//   'label' => __('Texte Erreur', 'theme_31w'),
+//   'section' => 'erreur_section',
+//   'type' => 'text',
+// ));
+
+// NOUVELLE VERSION
+$wp_customize->add_section('section_404', array(
   'title' => __('Infos Erreur', 'theme_31w'),
   'priority' => 30,
 ));
@@ -123,11 +154,22 @@ $wp_customize->add_setting('erreur_image', array(
 
 $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'erreur_image', array(
   'label' => __('Image Erreur', 'theme_31w'),
-  'section' => 'erreur_section',
+  'section' => 'section_404',
 )));
 
+// texte/titre
+$wp_customize->add_setting('erreur_titre', array(
+  'default' => __('', 'theme_31w'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
 
+$wp_customize->add_control('erreur_titre', array(
+  'label' => __('Titre Erreur', 'theme_31w'),
+  'section' => 'section_404',
+  'type' => 'text',
+));
 
+// texte/sous-titre
 $wp_customize->add_setting('erreur_texte', array(
   'default' => __('', 'theme_31w'),
   'sanitize_callback' => 'sanitize_text_field'
@@ -135,7 +177,7 @@ $wp_customize->add_setting('erreur_texte', array(
 
 $wp_customize->add_control('erreur_texte', array(
   'label' => __('Texte Erreur', 'theme_31w'),
-  'section' => 'erreur_section',
+  'section' => 'section_404',
   'type' => 'text',
 ));
 

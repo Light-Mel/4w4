@@ -7,27 +7,99 @@
     flex-direction: column;
     padding: 3%;
     font-weight: bold;
+    color: $couleur__intraTexte;
+    text-align: center;
+    gap: 5%;
+    background-position: 50%;
+    
+    @media screen and (min-width:992px) {
+        background-size: 100%;
+      }
 
-    &__ligne{
-        display: flex;
-        width: 50%;
-        border: none;
-        height: 5px;
-        background-color: #000000;
-        border-radius: 3px;
-    }
+    // &__ligne{
+    //     display: flex;
+    //     width: 50%;
+    //     border: none;
+    //     height: 5px;
+    //     background-color: #000000;
+    //     border-radius: 3px;
+    // }
 
-    &__img{
-        width:42%;
-    }
+    // &__img{
+    //     width:42%;
+    // }
 
     &__titre{
-        font-size: 2.5rem;
+        font-size: 2rem;
+        background-color: rgb(255, 255, 255, 0.25);
+        border-radius: 4px; 
+        padding: 1% 5%;
+
+        @media screen and (min-width:992px) {
+            font-size: 2.5rem;
+        }
+
+        @media screen and (min-width:768px) {
+            font-size: 2rem;
+        }
+        
+    }
+
+    &__soustitre{
+        font-size: 1rem;
+        background-color: rgb(255, 255, 255, 0.25);
+        border-radius: 4px; 
+        padding: 1% 5%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    &__lesTextes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+        // margin: 5%;
     }
 
     &__bouton{
         font-weight: bold;
         width: 100%;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        height: 60px; 
+        border: none; 
+        border-radius: 4px; 
+        background-color: $couleur__intraBouton; 
+        color: $couleur__intraBleu;
+        font-size: 1.5rem; 
+    }
+    &__leMenu{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5px;
+
+        & .menu{
+            display: flex;
+            padding: 0;
+        }
+    }
+
+    &__menuSuggestion{
+        font-weight: bold;
+        width: 100%;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        height: 60px; 
+        border: none; 
+        border-radius: 4px; 
+        background-color: $couleur__intraBouton; 
+        color: $couleur__intraBleu;
+        font-size: 1.5rem; 
     }
 
     &__suggestions{
