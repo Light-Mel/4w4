@@ -3,37 +3,39 @@ get_header();
 $introuvable_img = get_theme_mod('erreur_image', 'Default Title');
 ?>
   <!-- <h4>404.php</h4> -->
-    <section>
+    <section style="background-image: url(<?php echo($introuvable_img) ?>)">
         <div class="erreur404">
-            <img class="erreur404__img" src="<?php echo($introuvable_img); ?>" alt="Recherche du contenu...">
-           <h1 class="erreur404__titre">Erreur 404</h1>
-           <hr class="erreur404__ligne">
-           <h2>Bien tenté, mais la page que vous recherchez n'existe pas!</h2>
-           <p>Veuillez vérifier s'il y a une faute d'orthographe dans votre recherche...</p>
-          
+            <!-- Titre -->
+            <div class="erreur404__titre">
+                <h1>Oops, vous avez échoué sur l'île 404 !</h1>
+            </div>
+
+           <!-- Sous-titre -->
+           <div class="erreur404__soustitre">
+                <p>Pas de panique, cher membre explorateur ! Vous avez dérivé un peu trop loin des destinations de rêve 
+                que notre club a soigneusement sélectionnées pour vous. Reprenez votre périple en cliquant sur 'Accueil' 
+                pour découvrir à nouveau nos voyages d’exception !</p>
+           </div>
+           
+           <!-- Bouton pour retourner à l'accueil -->
+           <a href="https://gftnth00.mywhc.ca/4w4_42/">
+                <button class="hero__bouton erreur404__bouton">
+                    Retour à l'accueil
+                </button>
+           </a>
+
+           <!-- Menu -->
            <div class="erreur404__suggestions">
-           <p>Destinations que vous aimeriez peut-être :</p>
-           <?php wp_nav_menu(array(
+                <?php wp_nav_menu(array(
                     "menu"=> "menuSuggestions",
                     "container" => "nav",
                     "container_class" => "erreur404__menuSuggestions"
                 )); ?>
            </div>
 
-           <!-- <a href="http://localhost:81/4w4/">
-                <button class="hero__bouton erreur404__bouton">
-                    Retour à l'accueil
-                </button>
-           </a> -->
-
-           <a href="https://gftnth00.mywhc.ca/4w4_42/">
-                <button class="hero__bouton erreur404__bouton">
-                    Retour à l'accueil
-                </button>
-           </a>
-           
-           <div class="hero__icone-app">
-                <?php get_template_part('gabarit/social'); ?>
+           <!-- Barre de recherche -->
+           <div class="entete__recherche">
+                    <?php get_search_form() ?>
             </div>
         </div>
     </section>
