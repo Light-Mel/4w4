@@ -326,8 +326,12 @@ Composants
   justify-content: space-evenly;
   gap: 2%;
   padding: 0;
-  flex-wrap: wrap;
   row-gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .erreur404__leMenu .menu {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 800px) {
   .erreur404__leMenu .menu {
@@ -342,7 +346,7 @@ Composants
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3%;
+  padding: 8px;
   border: none;
   border-radius: 4px;
   background-color: #ffe217;
