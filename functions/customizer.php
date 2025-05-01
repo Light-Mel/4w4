@@ -74,7 +74,7 @@ function theme_31w_customize_register($wp_customize) {
   ));
 
   // background
-  $wp_customize->add_setting('hero_background', array(
+  /*$wp_customize->add_setting('hero_background', array(
     'default' => '',
     'sanitize_callback' => 'esc_url_raw',
   ));
@@ -82,7 +82,41 @@ function theme_31w_customize_register($wp_customize) {
   $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
     'label' => __('Hero Background Image', 'theme_31w'),
     'section' => 'hero_section',
+  )));*/
+
+  // background 2
+  $wp_customize->add_setting('hero_background_1', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_1', array(
+    'label' => __('Hero Background Image1', 'theme_31w'),
+    'section' => 'hero_section',
   )));
+
+  // background 3
+  $wp_customize->add_setting('hero_background_2', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_2', array(
+    'label' => __('Hero Background Image2', 'theme_31w'),
+    'section' => 'hero_section',
+  )));
+
+  // background 4
+  $wp_customize->add_setting('hero_background_3', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_3', array(
+    'label' => __('Hero Background Image3', 'theme_31w'),
+    'section' => 'hero_section',
+  )));
+
 
 
 

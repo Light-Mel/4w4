@@ -9,8 +9,10 @@
     $hero_tel = get_theme_mod('general_telephone','Default Title');
     $hero_adresse = get_theme_mod('general_adresse','Default Title');
  ?>
+
+<?php get_template_part("/gabarit/hero"); ?>
 <!-- <h4>front-page.php</h4> -->
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="hero__contenu global">
             <h1 class="hero__titre">
             Des voyages haut en couleur avec Gaudet!
@@ -43,7 +45,7 @@
                 <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
             </div>
         </div>
-    </section>
+    </section> -->
  
     <section class="populaire">
         <div class="boite__flex global">
