@@ -4,12 +4,12 @@
 (function(){
     console.log("destination.js")
     const categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
-    //const domaine = window.location.href
-    const domaine = document.querySelector('base').href;
+    const domaine = window.location.href
+    //const domaine = document.querySelector('base').href;
    
-    console.log(apiUrl)
+    //console.log(apiUrl)
     parcourir_bouton()
-    mon_fetch(categoryId)
+    //mon_fetch(categoryId)
 
 function parcourir_bouton(){
     const categorie__ul__li = document.querySelectorAll(".categorie__ul__li")
@@ -39,7 +39,7 @@ function mon_fetch(id_category){
                     <p>${article.excerpt.rendered}</p>
                     <a href="${article.link}">Lire plus</a>
                 `;
-                destinationList .appendChild(articleElement);
+                destinationList.appendChild(articleElement);
             });
         })
         .catch(error => console.error('Erreur lors de la récupération des articles:', error));

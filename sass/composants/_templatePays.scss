@@ -58,6 +58,9 @@
         // width: 100vw;
      position: relative;
      bottom: -6px;
+     animation: anim_svg 1s alternate infinite;
+
+    
    }
     &__SectionMenu{
     
@@ -121,4 +124,13 @@
     }
     
 
+}
+
+ @keyframes anim_svg{
+        0%{
+            transform: translateX(100vw);
+        }
+    100%{
+        transform: translateX(0vw);
+    }
 }
