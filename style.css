@@ -264,6 +264,10 @@ Composants
   margin-bottom: 2%;
 }
 
+.destination {
+  z-index: 1;
+}
+
 .erreur404 {
   display: flex;
   align-items: center;
@@ -470,12 +474,14 @@ Composants
   z-index: 0;
   position: relative;
   bottom: -6px;
+  animation: anim_svg 1s alternate infinite;
 }
 .templatePays__SectionMenu {
   text-align: center;
 }
 .templatePays__SectionMenu__leMenu {
-  z-index: 1;
+  z-index: -1;
+  flex-direction: column;
   padding-bottom: 30%;
   padding-left: 10%;
   padding-right: 10%;
@@ -526,6 +532,14 @@ Composants
   position: relative;
 }
 
+@keyframes anim_svg {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /* /////////////////// 
 Layout
 /////////////////// */
@@ -697,9 +711,18 @@ footer {
 .piedpage svg {
   position: relative;
   top: -204px;
-  z-index: 0;
+  z-index: 1;
+  animation: anim_svg 1s alternate infinite;
 }
 
+@keyframes anim_svg {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /*.hero{
     background-image: url("images/maldives.jpg");
     background-repeat: no-repeat;

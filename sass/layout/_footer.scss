@@ -102,5 +102,15 @@ footer{
   // width: 100vw;
   position: relative;
   top: -204px;
-  z-index: 0;
+  z-index: 1;
+  animation: anim_svg 1s alternate infinite;
+}
+
+@keyframes anim_svg{
+  0%{
+      transform: translateY(100px);
+  }
+100%{
+  transform: translateY(0px);
+}
 }
