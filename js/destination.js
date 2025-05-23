@@ -4,10 +4,12 @@
 (function(){
     console.log("destination.js")
     const categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
-    const domaine = window.location.href
-    const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
+    //const domaine = window.location.href
+    const domaine = document.querySelector('base').href;
+   
     console.log(apiUrl)
     parcourir_bouton()
+    mon_fetch(categoryId)
 
 function parcourir_bouton(){
     const categorie__ul__li = document.querySelectorAll(".categorie__ul__li")
@@ -16,12 +18,14 @@ function parcourir_bouton(){
         elm.addEventListener('mousedown', function(){
             console.log(elm.tagName)
             console.log("elm.dataset.category_id = " , elm.dataset.category_id)
+            mon_fetch(elm.dataset.category_id)
         })
     })
 
 }
 
-
+function mon_fetch(id_category){
+    const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
@@ -39,4 +43,6 @@ function parcourir_bouton(){
             });
         })
         .catch(error => console.error('Erreur lors de la récupération des articles:', error));
+    }
+    
     })()
