@@ -18,16 +18,16 @@ $pays_soustitre = get_theme_mod('templatePays_texte', 'Default Title');
                 <p><?php echo($pays_soustitre)?></p>
                 </div>
 
-                <section class="populaire">
-                <div class="boite__flex global">
+                
+                <div class="boite__flex global populaire pays">
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <?php if (in_category('galerie')) {
+                    <?php if (in_category('pays')) {
                     the_content();
             
                     } ?>
                     <?php endwhile; endif; ?>
                 </div>
-            </section>
+            
             </div>
             
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -37,9 +37,9 @@ $pays_soustitre = get_theme_mod('templatePays_texte', 'Default Title');
           <!-- Menu -->
           <div class="templatePays__leMenu">
                 <?php wp_nav_menu(array(
-                    "menu"=> "menuSuggestions",
+                    "menu"=> "menuPays",
                     "container" => "nav",
-                    "container_class" => "templatePays__menuSuggestions"
+                    "container_class" => "templatePays__menuPays"
                 )); ?>
            </div>
     </section>
