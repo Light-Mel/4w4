@@ -7,18 +7,22 @@
     flex-direction: column;
     //padding: 3%;
     font-weight: bold;
-    text-align: center;
+    //text-align: center;
     //gap: 5%;
-    background-position: 50%;
+    background-position: 10%;
     &__ImagesTextes{
         display: flex;
         align-items: center;
         justify-content: center;
+        //background-color: rgb(159, 163, 200);
+        padding-bottom: 5%;
+        padding-top: 5%;
+        z-index: -1;
     }
     &__titre{
         font-size: 2rem;
-        background-color: rgb(255, 255, 255, 0.25);
-        border-radius: 4px; 
+        //background-color: rgb(255, 255, 255, 0.25);
+        //border-radius: 4px; 
         padding: 1% 5%;
 
         @media screen and (min-width:992px) {
@@ -33,32 +37,37 @@
 
     &__soustitre{
         font-size: 1rem;
-        background-color: rgb(255, 255, 255, 0.25);
-        border-radius: 4px; 
-        padding: 1% 5%;
-        margin-top: 5%;
-        margin-bottom: 2%;
+        //background-color: rgb(255, 255, 255, 0.25);
+        //border-radius: 4px; 
+        padding: 0% 5%;
+        //margin-top: 5%;
+        //margin-bottom: 2%;
     }
 
     &__lesTextes{
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: center;
         flex-direction: column;
         width: 70%;
         // margin: 5%;
+        z-index: 1;
     }
     &__SectionMenu svg{
+        z-index: 0;
         // width: 100vw;
      position: relative;
-     bottom: -14px;
+     bottom: -6px;
    }
     &__SectionMenu{
     
-        
+        text-align: center;
         &__leMenu{
             z-index: 1;
-            padding: 10%;
+            padding-bottom: 30%;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 0%;
             display: flex;
             align-items: center;
             justify-content:space-evenly;
@@ -97,7 +106,7 @@
                 padding: 8px;
                 border: none; 
                 border-radius: 4px; 
-                background-color: $couleur__intraBouton; 
+                background-color: rgb(120, 140, 200); 
                 color: black;
                 font-size: 1rem; 
             }

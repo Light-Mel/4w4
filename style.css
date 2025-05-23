@@ -430,18 +430,18 @@ Composants
   justify-content: center;
   flex-direction: column;
   font-weight: bold;
-  text-align: center;
-  background-position: 50%;
+  background-position: 10%;
 }
 .templatePays__ImagesTextes {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  z-index: -1;
 }
 .templatePays__titre {
   font-size: 2rem;
-  background-color: rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
   padding: 1% 5%;
 }
 @media screen and (min-width: 992px) {
@@ -456,26 +456,30 @@ Composants
 }
 .templatePays__soustitre {
   font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
-  padding: 1% 5%;
-  margin-top: 5%;
-  margin-bottom: 2%;
+  padding: 0% 5%;
 }
 .templatePays__lesTextes {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   flex-direction: column;
   width: 70%;
+  z-index: 1;
 }
 .templatePays__SectionMenu svg {
+  z-index: 0;
   position: relative;
-  bottom: -14px;
+  bottom: -6px;
+}
+.templatePays__SectionMenu {
+  text-align: center;
 }
 .templatePays__SectionMenu__leMenu {
   z-index: 1;
-  padding: 10%;
+  padding-bottom: 30%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -513,7 +517,7 @@ Composants
   padding: 8px;
   border: none;
   border-radius: 4px;
-  background-color: #ffe217;
+  background-color: rgb(120, 140, 200);
   color: black;
   font-size: 1rem;
 }
@@ -611,7 +615,7 @@ footer {
 .piedpage {
   display: flex;
   flex-direction: column;
-  padding-bottom: 0vh;
+  padding-bottom: 5vh;
 }
 @media screen and (max-width: 800px) {
   .piedpage {
