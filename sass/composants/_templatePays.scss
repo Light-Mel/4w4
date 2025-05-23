@@ -1,0 +1,115 @@
+.templatePays{
+    display: flex;
+    //align-items: center;
+    //flex-grow: 1;
+    justify-content:center;
+    //flex-wrap: wrap;
+    flex-direction: column;
+    //padding: 3%;
+    font-weight: bold;
+    text-align: center;
+    //gap: 5%;
+    background-position: 50%;
+    &__ImagesTextes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__titre{
+        font-size: 2rem;
+        background-color: rgb(255, 255, 255, 0.25);
+        border-radius: 4px; 
+        padding: 1% 5%;
+
+        @media screen and (min-width:992px) {
+            font-size: 2.5rem;
+        }
+
+        @media screen and (min-width:768px) {
+            font-size: 2rem;
+        }
+        
+    }
+
+    &__soustitre{
+        font-size: 1rem;
+        background-color: rgb(255, 255, 255, 0.25);
+        border-radius: 4px; 
+        padding: 1% 5%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    &__lesTextes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+        // margin: 5%;
+    }
+    &__SectionMenu svg{
+        // width: 100vw;
+     position: relative;
+     bottom: -14px;
+   }
+    &__SectionMenu{
+    
+        
+        &__leMenu{
+            z-index: 1;
+            padding: 10%;
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+            gap: 5px;
+            //padding: 3%;
+            //flex-grow: 1;
+            background-color: rgb(190, 140, 200);
+    
+            & .menu{
+                z-index: 1;
+                position: relative;
+                display: flex;
+                justify-content: space-evenly;
+                gap: 2%;
+                padding: 0;
+                
+                row-gap: 10px;
+                @media screen and (max-width:768px) {
+                    flex-wrap: wrap;
+                }
+                @media screen and (max-width: 800px) {
+                    flex-direction: row;
+                    padding: 0;
+                    align-items: center;
+                    row-gap: 10px;
+                    }
+            }
+            & a{
+                z-index: 1;
+                font-weight: bold;
+                // width: 100%;
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                // height: 60px; 
+                padding: 8px;
+                border: none; 
+                border-radius: 4px; 
+                background-color: $couleur__intraBouton; 
+                color: black;
+                font-size: 1rem; 
+            }
+    
+            
+        }
+
+        &__menuPays{
+            z-index: 1;
+            position: relative;
+        }
+    }
+    
+
+}

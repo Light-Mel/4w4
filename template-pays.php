@@ -6,7 +6,7 @@ $pays_soustitre = get_theme_mod('templatePays_texte', 'Default Title');
 ?>
   <!-- <h4>templatePays.php</h4> -->
     <section class="templatePays" style="background-image: url(<?php echo($templatePays_img) ?>)">
-
+            <section class="templatePays__ImagesTextes">
             <div class="templatePays__lesTextes">
                 <!-- Titre -->
                 <div class="templatePays__titre">
@@ -29,19 +29,25 @@ $pays_soustitre = get_theme_mod('templatePays_texte', 'Default Title');
                 </div>
             
             </div>
+            </section>
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="rgb(110, 140, 200)" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,250.7C384,267,480,245,576,202.7C672,160,768,96,864,74.7C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            
+            
+          <!-- Menu -->
+           <section class="templatePays__SectionMenu">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="rgb(190, 140, 200)" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,250.7C384,267,480,245,576,202.7C672,160,768,96,864,74.7C960,53,1056,75,1152,74.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
             </svg>
            
-          <!-- Menu -->
-          <div class="templatePays__leMenu">
+           <div class="templatePays__SectionMenu__leMenu">
                 <?php wp_nav_menu(array(
                     "menu"=> "menuPays",
                     "container" => "nav",
                     "container_class" => "templatePays__menuPays"
                 )); ?>
            </div>
+           </section>
+          
     </section>
     <?php get_footer(); ?>
 </body>
