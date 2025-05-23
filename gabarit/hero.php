@@ -1,5 +1,5 @@
 <?php  
-    $hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
+    $hero_auteur = get_theme_mod('general_auteur', 'Default Title');
     $hero_email = get_theme_mod('general_email','Default Title');
     $hero_tel = get_theme_mod('general_telephone','Default Title');
     $hero_adresse = get_theme_mod('general_adresse','Default Title');
