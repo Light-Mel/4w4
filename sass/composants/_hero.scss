@@ -15,7 +15,7 @@
   &__contenu {
     max-width: 80%; 
     background-color: rgba(225, 225, 225, 0.707); 
-    //padding: 5%; 
+    padding: 2%; 
     border-radius: 2rem; 
     display: flex; 
     align-items: center; 
@@ -99,5 +99,6 @@
 
   &__radio__input{
     z-index: 10;
+    margin-bottom: 2%;
   }
 }

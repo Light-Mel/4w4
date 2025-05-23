@@ -1,5 +1,8 @@
 <?php  
     $hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
+    $hero_email = get_theme_mod('general_email','Default Title');
+    $hero_tel = get_theme_mod('general_telephone','Default Title');
+    $hero_adresse = get_theme_mod('general_adresse','Default Title');
     for ($k=0; $k<3; $k++){
     $hero_background[$k] = get_theme_mod('hero_background_'. $k, '');
     }
@@ -13,7 +16,42 @@
             <input  class="hero__radio__input" data-id_radio="1" type="radio" name="carroussel">
             <input  class="hero__radio__input" data-id_radio="2" type="radio" name="carroussel">
         </div>
+
         <div class="hero__contenu global">
+            <h1 class="hero__titre">
+            <!-- Des voyages haut en couleur avec Gaudet! -->
+            <?php bloginfo('name'); ?>
+            </h1>
+            <p class="hero__description">
+            <!-- Chez Gaudet, nous nous donnons pour mission de vous faire vivre les plus beaux voyages de vos rêves. 
+            Chaque salon FUN vous offrira une multitude de conseils pour vos escapades, qu'elles soient en famille, seul, ou avec des amis. 
+            N'attendez plus! Partez à l'aventure vers de nouveaux horizons avec nous! -->
+            <?php bloginfo('description'); ?>
+            </p>
+            <button class="hero__bouton">
+                Inscription
+            </button>
+            
+            <p class="hero__info-top">
+            <?php echo($hero_auteur); ?>
+            </p>
+            <p class="hero__info">
+                <?php echo($hero_email); ?>
+            </p>
+            <p class="hero__info">
+                <?php echo($hero_tel); ?>
+            </p>
+            <p class="hero__info">
+                <?php echo($hero_adresse); ?>
+            </p>
+            <div class="hero__icone-app">
+                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=paypal&color=000000" width="20" height="20">
+                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
+            </div>
+        </div>
+        <!-- <div class="hero__contenu global">
             <div class="hero__animation hero__animation--active">
                 <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
                 <p class="hero__description"><?php bloginfo('description'); ?></p>
@@ -42,5 +80,5 @@
                 <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
                 <img src="https://s2.svgbox.net/social.svg?ic=snapchat&color=000000" width="20" height="20">
             </div>
-        </div>
+        </div> -->
     </section>
