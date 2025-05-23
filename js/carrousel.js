@@ -27,6 +27,7 @@
         }
         hero__carrousel[i-1].classList.add("hero__carrousel--active");
         hero__animation[i-1].classList.add("hero__animation--active");
+        //console.log(i);
     }, 5000);
 
     function parcourir_carrousel(){

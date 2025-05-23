@@ -481,7 +481,6 @@ Layout
 
 .global {
   margin: 0 auto;
-  max-width: 1000px;
 }
 
 .populaire {
@@ -513,7 +512,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-bottom: 0vh;
 }
 @media screen and (max-width: 800px) {
   .piedpage {
@@ -590,6 +589,10 @@ footer {
   .recherche__ordi {
     display: none;
   }
+}
+
+svg {
+  position: relative;
 }
 
 /*.hero{
