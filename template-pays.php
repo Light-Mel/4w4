@@ -40,14 +40,24 @@ $pays_soustitre = get_theme_mod('templatePays_texte', 'Default Title');
             </svg>
            
            <div class="templatePays__SectionMenu__leMenu destination">
-                <?php wp_nav_menu(array(
+            <div>
+                     <?php wp_nav_menu(array(
                     "menu"=> "menuPays",
                     "container" => "nav",
                     "container_class" => "templatePays__menuPays"
                 )); ?>
 
                   <?php categories_liste("destination") ?>
+
+            </div>
+               
+                    <p>Date: <?php the_field('date')?></p>
+        <p>Heure: <?php the_field('heure')?></p>
+        <p>Conférencier: <?php the_field('conferencier')?></p>
+        <p>Coordonnées: <?php the_field('coordonnees')?></p>
            </div>
+
+      
            
     </section>
     <?php get_footer(); ?>
