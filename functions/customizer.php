@@ -229,7 +229,50 @@ $wp_customize->add_control('erreur_texte', array(
   'type' => 'text',
 ));
 
+// SECTION TEMPLATE PAYS ------------------------------------------------------------------------------------------
+
+$wp_customize->add_section('section_templatePays', array(
+  'title' => __('Template Pays', 'theme_31w'),
+  'priority' => 30,
+));
+
+// background
+$wp_customize->add_setting('templatePays_image', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',
+));
+
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'templatePays_image', array(
+  'label' => __('Image Pays', 'theme_31w'),
+  'section' => 'section_templatePays',
+)));
+
+// texte/titre
+$wp_customize->add_setting('templatePays_titre', array(
+  'default' => __('', 'theme_31w'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
+
+$wp_customize->add_control('templatePays_titre', array(
+  'label' => __('Titre Pays', 'theme_31w'),
+  'section' => 'section_templatePays',
+  'type' => 'text',
+));
+
+// texte/sous-titre
+$wp_customize->add_setting('templatePays_texte', array(
+  'default' => __('', 'theme_31w'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
+
+$wp_customize->add_control('templatePays_texte', array(
+  'label' => __('Texte templatePays', 'theme_31w'),
+  'section' => 'section_templatePays',
+  'type' => 'text',
+));
 }
+
+
 
 add_action('customize_register', 'theme_31w_customize_register');
 
